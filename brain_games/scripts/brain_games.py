@@ -2,7 +2,6 @@
 
 from brain_games.cli import welcome_user
 
-import prompt
 
 def main():
-	welcome_user()
+    welcome_user()
