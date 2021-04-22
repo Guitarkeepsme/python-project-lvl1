@@ -1,33 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Guitarkeepsme 
-hexlet-boilerplates
-/
-python-package
-Template
-7
-5572
-Code
-Issues
-Pull requests
-Actions
-Security
-Insights
-python-package/.github/workflows/pyci.yml
-@zhabinka
-zhabinka add test coverage
-Latest commit d16531a on 10 Mar
- History
- 1 contributor
-34 lines (32 sloc)  896 Bytes
-  
-name: Python CI
+ name: Python CI
 
 on:
   - push
