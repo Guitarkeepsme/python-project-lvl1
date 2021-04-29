@@ -17,12 +17,6 @@ def main():
     (welcome_user)
 
 
-def gcd(x, y):
-    while y != 0:
-        (x, y) = (y, x % y)
-    return x
-
-
 def brain_gcd(n):
     global score
     counter = 0
