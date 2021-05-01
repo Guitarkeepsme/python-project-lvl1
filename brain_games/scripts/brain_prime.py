@@ -17,35 +17,45 @@ username = welcome_user()
 score = 0
 
 
+def is_prime(number):
+    d = 2
+    while number % d != 0:
+        d += 1
+    if d == number:
+        global pr
+        pr = number
+    else:
+        pr = 51
+
+
 def brain_prime(n):
     global score
     counter = 0
     while counter < 3:
-        user_number = int(randint(1, 100))
-        print("Question:", user_number)
+        number = randint(1, 50)
+        is_prime(number)
+        print('Question:', number)
         print('Your answer:')
         answer = input()
-        if user_number % 2 != 0 and answer == str('yes'):
+        if number == pr and answer == str('yes'):
             print('Correct!')
             counter = counter + 1
             score += 1
-        elif user_number % 2 != 0 and answer == str('no'):
+        elif number != pr and answer == str('no'):
+            print('Correct!')
+            counter = counter + 1
+            score += 1
+        elif number == pr and answer == str('no'):
             print("'no' is wrong answer ;(. Correct answer was 'yes'")
             counter = counter + 3
-        elif user_number % 2 == 0 and answer == str('no'):
-            print('Correct!')
-            counter = counter + 1
-            score += 1
-        elif user_number % 2 == 0 and answer == str('yes'):
+        elif number != pr and answer == str('yes'):
             print("'yes' is wrong answer ;(. Correct answer was 'no'")
-            counter = counter + 3
-        else:
-            print('Incorrect answer type')
             counter = counter + 3
 
 
 print("Answer \"yes\" if the number is prime, otherwise answer \"no\".")
 brain_prime(3)
+
 
 if score == 3:
     print('Congratulations, ' + username + '!')
