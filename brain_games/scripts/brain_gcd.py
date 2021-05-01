@@ -27,7 +27,7 @@ def brain_gcd(n):
         print('Question:', str(x), str(y))
         answer = input()
         print('Your answer:', answer)
-        
+
         def finder_gcd(x, y):
             while y != 0:
                 (x, y) = (y, x % y)

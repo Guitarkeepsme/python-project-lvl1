@@ -51,4 +51,3 @@ if score == 3:
     print('Congratulations, ' + username + '!')
 else:
     print("Let's try again, " + username + "!")
-
