@@ -31,14 +31,14 @@ def brain_even(n):
             score += 1
         elif user_number % 2 != 0 and answer == str('no'):
             print("'no' is wrong answer ;(. Correct answer was 'yes'")
-            counter = counter + 1
+            counter = counter + 3
         elif user_number % 2 == 0 and answer == str('no'):
             print('Correct!')
             counter = counter + 1
             score += 1
         elif user_number % 2 == 0 and answer == str('yes'):
             print("'yes' is wrong answer ;(. Correct answer was 'no'")
-            counter = counter + 1
+            counter = counter + 3
         else:
             print('Incorrect answer type')
             counter = counter + 3
