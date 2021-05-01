@@ -6,3 +6,4 @@ even numbers: https://asciinema.org/a/ELgnyumGn9uiQUo0pe2kxJi6U
 calculation:  https://asciinema.org/a/CNq8WBm3cQd7RtBtJr6FHIlR1
 greatest common divisor: https://asciinema.org/a/PWVVMbNT9IL3MsavLCUuJ4l0j
 progression: https://asciinema.org/a/L3wYb6rbtlvAz8xKoyqmFOL34
+prime numbers: https://asciinema.org/a/9eTa2DzVBdjctuWtKEUjKqlXb
