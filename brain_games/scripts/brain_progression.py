@@ -1,4 +1,4 @@
-from random import randint, choice
+from random import randint
 import prompt
 
 
@@ -27,70 +27,20 @@ def prog(n):
         n3 = n2 + delta
         n4 = n3 + delta
         n5 = n4 + delta
-        brain_numbers = [n1, n2, n3, n4, n5]
-        hider = choice(brain_numbers)
-        if hider == n1:
-            print('What number is missing in the progression?')
-            print("Question:", '..', n2, n3, n4, n5)
-            answer = input()
+        print("Question:", n1, '..', n3, n4, n5)
+        answer = input()
+        if answer == str(n2):
             print('Your answer:', answer)
-            if answer == str(n1):
-                print('Correct!')
-                score += 1
-                counter = counter + 1
-            else:
-                print("'" + str(answer) + "'", "is wrong answer ;(. Correct answer was", "'" + str(n1) + "'")
-                counter = counter + 3
-        elif hider == str(n2):
-            print('What number is missing in the progression?')
-            print("Question:", n1, '..', n3, n4, n5)
-            answer = input()
-            print('Your answer:', answer)
-            if answer == n2:
-                print('Correct!')
-                score += 1
-                counter = counter + 1
-            else:
-                print("'" + str(answer) + "'", "is wrong answer ;(. Correct answer was", "'" + str(n2) + "'")
-                counter = counter + 3
-        elif hider == n3:
-            print('What number is missing in the progression?')
-            print("Question:", n1, n2, '..', n4, n5)
-            answer = input()
-            print('Your answer:', answer)
-            if answer == str(n3):
-                print('Correct!')
-                score += 1
-                counter = counter + 1
-            else:
-                print("'" + str(answer) + "'", "is wrong answer ;(. Correct answer was", "'" + str(n3) + "'")
-                counter = counter + 3
-        elif hider == n4:
-            print('What number is missing in the progression?')
-            print("Question:", n1, n2, n3, '..', n5)
-            answer = input()
-            print('Your answer:', answer)
-            if answer == str(n4):
-                print('Correct!')
-                score += 1
-                counter = counter + 1
-            else:
-                print("'" + str(answer) + "'", "is wrong answer ;(. Correct answer was", "'" + str(n4) + "'")
-                counter = counter + 3
-        elif hider == n5:
-            print('What number is missing in the progression?')
-            print("Question:", n1, n2, n3, n4, '..')
-            answer = input()
-            print('Your answer:', answer)
-            if answer == str(n5):
-                print('Correct!')
-                score += 1
-                counter = counter + 1
-            else:
-                print("'" + str(answer) + "'", "is wrong answer ;(. Correct answer was", "'" + str(n5) + "'")
-                counter = counter + 3
+            print('Correct!')
+            score += 1
+            counter = counter + 1
+        else:
+            print("'" + str(answer) + "'", "is wrong answer.")
+            print("Correct answer was", "'" + str(n2) + "'")
+            counter = counter + 3
 
 
+print('What number is missing in the progression?')
 prog(3)
 if score == 3:
     print('Congratulations, ' + username + '!')

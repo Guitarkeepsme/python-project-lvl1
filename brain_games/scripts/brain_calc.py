@@ -11,14 +11,14 @@ def welcome_user():
 
 
 def main():
-    (welcome_user)
+    welcome_user
 
 
 username = welcome_user()
 score = 0
 
 
-def calc(n):
+def brain_calc(n):
     global score
     counter = 0
     while counter < 3:
@@ -41,26 +41,20 @@ def calc(n):
             print('Correct!')
             score += 1
             counter = counter + 1
-        elif result == game_sum and answer != str(n_1 + n_2):
-            print(answer + " is wrong answer ;(. Correct answer was " + str(n_1 + n_2))
-            counter = counter + 3
         elif result == prod and answer == str(n_3 * n_4):
             print('Correct!')
             score += 1
             counter = counter + 1
-        elif result == prod and answer != str(n_3 * n_4):
-            print(answer + " is wrong answer ;(. Correct answer was " + str(n_3 * n_4))
-            counter = counter + 3
         elif result == diff and answer == str(n_5 - n_6):
             print('Correct!')
             score += 1
             counter = counter + 1
-        elif result == diff and answer != str(n_5 - n_6):
-            print(answer + " is wrong answer ;(. Correct answer was " + str(n_5 - n_6))
+        else:
+            print(answer + " is wrong answer ;(.")
             counter = counter + 3
 
 
-calc(3)
+brain_calc(3)
 if score == 3:
     print('Congratulations, ' + username + '!')
 else:
