@@ -17,7 +17,7 @@ username = welcome_user()
 score = 0
 
 
-def brain_even(n):
+def brain_prime(n):
     global score
     counter = 0
     while counter < 3:
@@ -45,7 +45,7 @@ def brain_even(n):
 
 
 print("Answer \"yes\" if the number is prime, otherwise answer \"no\".")
-brain_even(3)
+brain_prime(3)
 
 if score == 3:
     print('Congratulations, ' + username + '!')
