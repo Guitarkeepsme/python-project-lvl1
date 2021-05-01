@@ -34,7 +34,7 @@ def brain_prime(n):
     while counter < 3:
         number = randint(1, 50)
         is_prime(number)
-        print('Question:', number)
+        print('Question: ' + str(number))
         print('Your answer:')
         answer = input()
         if number == pr and answer == str('yes'):
@@ -50,6 +50,9 @@ def brain_prime(n):
             counter = counter + 3
         elif number != pr and answer == str('yes'):
             print("'yes' is wrong answer ;(. Correct answer was 'no'")
+            counter = counter + 3
+        else:
+            print('Incorrect answer type')
             counter = counter + 3
 
 
