@@ -32,7 +32,7 @@ def brain_progression(n):
         hider = choice(brain_numbers)
         if hider == n1:
             print('What number is missing in the progression?')
-            print('..', n2, n3, n4, n5, n6)
+            print("Question:", '..', n2, n3, n4, n5, n6)
             answer = input()
             print('Your answer:', answer)
             if answer == str(n1):
@@ -44,7 +44,7 @@ def brain_progression(n):
                 counter = counter + 3
         elif hider == str(n2):
             print('What number is missing in the progression?')
-            print(n1, '..', n3, n4, n5, n6)
+            print("Question:", n1, '..', n3, n4, n5, n6)
             answer = input()
             print('Your answer:', answer)
             if answer == n2:
@@ -56,7 +56,7 @@ def brain_progression(n):
                 counter = counter + 3
         elif hider == n3:
             print('What number is missing in the progression?')
-            print(n1, n2, '..', n4, n5, n6)
+            print("Question:", n1, n2, '..', n4, n5, n6)
             answer = input()
             print('Your answer:', answer)
             if answer == str(n3):
@@ -68,7 +68,7 @@ def brain_progression(n):
                 counter = counter + 3
         elif hider == n4:
             print('What number is missing in the progression?')
-            print(n1, n2, n3, '..', n5, n6)
+            print("Question:", n1, n2, n3, '..', n5, n6)
             answer = input()
             print('Your answer:', answer)
             if answer == str(n4):
@@ -80,7 +80,7 @@ def brain_progression(n):
                 counter = counter + 3
         elif hider == n5:
             print('What number is missing in the progression?')
-            print(n1, n2, n3, n4, '..', n6)
+            print("Question:", n1, n2, n3, n4, '..', n6)
             answer = input()
             print('Your answer:', answer)
             if answer == str(n5):
@@ -92,7 +92,7 @@ def brain_progression(n):
                 counter = counter + 3
         elif hider == n6:
             print('What number is missing in the progression?')
-            print(n1, n2, n3, n4, n5, '..')
+            print("Question:", n1, n2, n3, n4, n5, '..')
             answer = input()
             print('Your answer:', answer)
             if answer == str(n6):
