@@ -15,3 +15,8 @@ publish:
 
 package-install:
 	python3 -m pip install --user --force-reinstall  dist/*.whl
+
+make lint:
+	poetry run flake8 brain_games
+
+.PHONY: install lint build

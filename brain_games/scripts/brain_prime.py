@@ -30,26 +30,25 @@ def brain_even(n):
             counter = counter + 1
             score += 1
         elif user_number % 2 != 0 and answer == str('no'):
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, " + username + "!")
+            print("'no' is wrong answer ;(. Correct answer was 'yes'")
             counter = counter + 1
         elif user_number % 2 == 0 and answer == str('no'):
             print('Correct!')
             counter = counter + 1
             score += 1
         elif user_number % 2 == 0 and answer == str('yes'):
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, " + username + "!")
+            print("'yes' is wrong answer ;(. Correct answer was 'no'")
             counter = counter + 1
         else:
             print('Incorrect answer type')
-            counter = counter + 1
+            counter = counter + 3
 
 
 print("Answer \"yes\" if the number is prime, otherwise answer \"no\".")
 brain_even(3)
 
-
 if score == 3:
     print('Congratulations, ' + username + '!')
 else:
-    print('Sorry, but you lost, ' + username + '. Try again!')
+    print("Let's try again, " + username + "!")
 
